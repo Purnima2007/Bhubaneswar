@@ -1,0 +1,115 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #111;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+  background: rgba(0,0,0,0.7);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: #ffcc00;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 900px;
+  margin: 120px auto 60px;
+  padding: 20px;
+  text-align: center;
+}
+.contact h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ffcc00;
+}
+.contact p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.contact-info {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* Map Section */
+.map {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+.map h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #4dd0e1;
+}
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+footer h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+footer p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Particle Background */
+#particles {
+ width :100%;
+  height:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+}

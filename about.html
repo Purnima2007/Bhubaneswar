@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Bhubaneswar</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <!-- Background Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">🏠Home</a></li>
+      <li><a href="about.html" class="active">ℹ About</a></li>
+      <li><a href="education.html">🎓Education</a></li>
+      <li><a href="gallery.html">🖼Gallery</a></li>
+      <li><a href="culture.html">🎭Culture</a></li>
+      <li><a href="tourism.html">🛕Tourist Place</a></li>
+      <li><a href="contact.html">📞Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="page-header fade-in">
+    <h1>About Bhubaneswar</h1>
+    <p>The Temple City of India</p>
+  </header>
+
+  <!-- Sections -->
+  <section class="about-section fade-in">
+    <h2>General Information</h2>
+    <p>Bhubaneswar, the capital of Odisha, is a historic and modern hub of temples, culture, and growth.</p>
+    <img src="lingaraj.jpg" alt="Lingaraj Temple">
+  </section>
+
+  <section class="about-section fade-in">
+    <h2>History</h2>
+    <p>Known as the land of temples, Bhubaneswar has a legacy of 2000 years, from the Kalinga Empire to Ashoka's transformation.</p>
+    <img src="khandagir.jpg" alt="Khandagiri Caves">
+  </section>
+
+  <section class="about-section fade-in">
+    <h2>Geography</h2>
+    <p>Surrounded by rivers, fertile land, and green hills, the city has a tropical climate and scenic beauty.</p>
+    <img src="dhauli.jpg" alt="Dhauli Shanti Stupa">
+  </section>
+
+  <!-- Demographics -->
+  <section class="about-section fade-in">
+    <h2>Demographics</h2>
+    <div class="charts">
+      <div class="chart"><canvas id="hinduChart"></canvas><p>Hindu - 95.21%%</p></div>
+      <div class="chart"><canvas id="muslimChart"></canvas><p>Muslim -3.29 %</p></div>
+      <div class="chart"><canvas id="christianChart"></canvas><p>Christian - 0.92%</p></div>
+      <div class="chart"><canvas id="otherChart"></canvas><p>Other - 0.12%</p></div>
+    </div>
+    <div class="charts">
+      <div class="chart"><canvas id="maleChart"></canvas><p>Male - 52%</p></div>
+      <div class="chart"><canvas id="femaleChart"></canvas><p>Female - 48%</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bhubaneswar Website | Designed with ❤</p>
+  </footer>
+
+  <script src="about.js"></script>
+</body>
+</html>

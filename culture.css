@@ -1,0 +1,209 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #111;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffcc00;
+}
+
+/* Culture Section */
+.culture {
+  max-width: 1000px;
+  margin: 120px auto 60px;
+  padding: 20px;
+  text-align: center;
+}
+.culture h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+.culture p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* Gallery Section */
+.gallery {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.photo-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+.photo-card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+.photo-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.photo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.7);
+}
+.photo-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Festivals Carousel */
+.festivals {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+.festivals h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px #ffcc00;
+}
+.festivals p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+}
+.slides {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  border-radius: 15px;
+}
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+.caption h3 {
+  margin: 0 0 5px;
+  color: #4dd0e1;
+}
+.caption p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Controls */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: white;
+  font-size: 2rem;
+  user-select: none;
+  transition: 0.3s;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.prev:hover, .next:hover {
+  color: #ffcc00;
+}
+
+/* Footer */
+footer.about {
+  background: rgba(0,0,0,0.8);
+  padding: 40px;
+  text-align: center;
+}
+footer.about h2 {
+  color: #4dd0e1;
+  margin-bottom: 15px;
+}
+footer.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Particle Canvas */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #111;
+}

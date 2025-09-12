@@ -1,0 +1,217 @@
+/* Reset & Body */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #111;
+  overflow-x: hidden;
+}
+
+/* Particle Canvas
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: black;
+  background-size: 600% 600%;
+  animation: gradientMove 20s ease infinite;
+} */
+
+/* Navigation */
+header {
+  background: rgba(0,0,0,0.7);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: #ffcc00;
+}
+
+/* Education Info Section */
+.education-info {
+  max-width: 900px;
+  margin: 120px auto 60px;
+  text-align: center;
+  padding: 20px;
+}
+.education-info h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ffcc00;
+}
+.education-info p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Carousel Section */
+.university-carousel {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+.university-carousel h2 {
+  color: #4dd0e1;
+  margin-bottom: 20px;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+.slides .slide {
+  display: none;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+}
+.slides .slide img {
+  width: 100%;
+  border-radius: 15px;
+}
+.slides .slide h3 {
+  color: #ffcc00;
+  margin: 10px 0;
+  text-shadow: 0 0 6px #ffcc00;
+}
+/* Carousel Navigation */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  user-select: none;
+  transition: 0.3s;
+}
+.prev:hover, .next:hover {
+  background: rgba(255,204,0,0.8);
+  color: #111;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Education Grid */
+.education-grid {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+.education-grid h2 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.edu-card {
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.edu-card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+.edu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.7);
+}
+.edu-card:hover img {
+  transform: scale(1.05);
+}
+.edu-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Contact Snippet */
+.edu-contact {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+.edu-contact h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+.edu-contact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+footer h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+footer p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Particle Canvas */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: black;
+  background-size: 600% 600%;
+  /* animation: gradientMove 20s ease infinite; */
+}

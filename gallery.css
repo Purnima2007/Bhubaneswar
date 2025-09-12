@@ -1,0 +1,122 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #111;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffcc00;
+}
+
+/* Gallery Section */
+.gallery {
+  max-width: 1200px;
+  margin: 120px auto 60px;
+  padding: 20px;
+  text-align: center;
+}
+.gallery h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+.gallery p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.photo-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+.photo-card img {
+  width: 100%;
+  height: 90%;
+  border-radius: 13px;
+  transition: transform 0.5s ease;
+}
+.photo-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.photo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.7);
+}
+.photo-card:hover img {
+  transform: scale(1.1);
+}
+
+/* About/Footer */
+footer.about {
+  background: rgba(0,0,0,0.8);
+  padding: 40px;
+  text-align: center;
+}
+footer.about h2 {
+  color: #4dd0e1;
+  margin-bottom: 30px;
+}
+footer.about p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Particle Canvas */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #111;
+}

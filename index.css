@@ -1,0 +1,121 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #000;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar ul { list-style: none; }
+.navbar ul li { display: inline-block; margin: 0 20px; }
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active { color: #ffcc00; }
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.background-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-content h1 { font-size: 50px; animation: fadeInDown 2s ease-out; }
+.hero-content p { font-size: 22px; margin-top: 10px; animation: fadeInUp 2s ease-out; }
+
+/* Intro Section */
+.intro, .highlights {
+  padding: 100px 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.7);
+}
+.intro h2, .highlights h2 { font-size: 36px; margin-bottom: 20px; }
+
+/* Highlights Section */
+.highlight-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.highlight-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+.highlight-card:hover { transform: scale(1.05); }
+
+/* Photo Section */
+.photos {
+  padding: 100px 20px;
+  background: rgba(0,0,0,0.85);
+  text-align: center;
+}
+.photos h2 { font-size: 36px; margin-bottom: 30px; }
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.photo-grid img {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.photo-grid img.show { opacity: 1; transform: translateY(0); }
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Particles Background */
+#particles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -2;
+}
